@@ -15,7 +15,7 @@ public class Fruit {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long fruitId;
+    private Long id;
     private String fruitName;
     private String fruitType;
 }

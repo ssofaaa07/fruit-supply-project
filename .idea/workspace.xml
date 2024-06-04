@@ -5,14 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae374548-14ab-482e-a19f-a8fb2d306959" name="Changes" comment="настройка проекта, создание сущностей БД">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/configurations/DataInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/controllers/ReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/controllers/SupplyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/forms/DeliveryForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/services/ReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static.style/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/entities/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/entities/Delivery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/entities/DeliveryItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/entities/DeliveryItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/entities/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/entities/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/entities/Price.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/entities/Price.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/repositories/DeliveryItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/repositories/DeliveryItemRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/repositories/DeliveryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/repositories/DeliveryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/repositories/FruitRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/repositories/FruitRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/repositories/PriceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/repositories/PriceRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/repositories/SupplierRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/repositories/SupplierRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/services/DeliveryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/services/DeliveryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/services/FruitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/services/FruitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/services/PriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/services/PriceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/services/SupplierService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/services/SupplierService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +57,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "/Users/s.butovetskaya/Documents/java/fruit-supply-project/src/main/resources"
   }
 }]]></component>
@@ -83,11 +102,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717446744381</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="настройка проекта, создание сущностей БД">
+      <created>1717447551107</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717447551107</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="настройка проекта, создание сущностей БД" />
     <option name="LAST_COMMIT_MESSAGE" value="настройка проекта, создание сущностей БД" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/fruit_supply_project$FruitSupplyApplication.ic" NAME="FruitSupplyApplication Coverage Results" MODIFIED="1717521517500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ssofaaa.*</FILTER>
+    </SUITE>
   </component>
 </project>

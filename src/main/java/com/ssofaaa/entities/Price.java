@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
@@ -16,7 +17,7 @@ public class Price {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long priceId;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "supplier_id")
@@ -26,7 +27,7 @@ public class Price {
     @JoinColumn(name = "fruit_id")
     private Fruit fruit;
 
-    private int price;
+    private BigDecimal price;
 
     @Temporal(TemporalType.DATE)
     private Date startDate;

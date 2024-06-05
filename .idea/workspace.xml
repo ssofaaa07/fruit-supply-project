@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae374548-14ab-482e-a19f-a8fb2d306959" name="Changes" comment="физ-диграмма">
+    <list default="true" id="ae374548-14ab-482e-a19f-a8fb2d306959" name="Changes" comment="пример отчета">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/repositories/DeliveryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/repositories/DeliveryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssofaaa/services/DeliveryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssofaaa/services/DeliveryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -111,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717590476583</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="пример отчета">
+      <created>1717599014676</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717599014676</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -119,7 +129,8 @@
     <MESSAGE value="работа с БД, создание excel-отчета, отображение веб-страницы" />
     <MESSAGE value="окончательные правки" />
     <MESSAGE value="физ-диграмма" />
-    <option name="LAST_COMMIT_MESSAGE" value="физ-диграмма" />
+    <MESSAGE value="пример отчета" />
+    <option name="LAST_COMMIT_MESSAGE" value="пример отчета" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fruit_supply_project$FruitSupplyApplication.ic" NAME="FruitSupplyApplication Coverage Results" MODIFIED="1717521517500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

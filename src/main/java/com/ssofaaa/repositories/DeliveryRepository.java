@@ -9,5 +9,6 @@ import java.util.List;
 
 @Repository
 public interface DeliveryRepository extends JpaRepository<Delivery, Long> {
-    List<Delivery> getAllByDeliveryDateBetween(Date startDate, Date endDate);
+    List<Delivery> findByDeliveryDateBetweenOrderByDeliveryDate(Date startDate, Date endDate);
+    List<Delivery> findAllByOrderByIdDesc();
 }

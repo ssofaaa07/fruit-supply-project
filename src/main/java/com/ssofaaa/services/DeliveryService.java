@@ -72,13 +72,13 @@ public class DeliveryService {
         return unitPrice.multiply(countBig);
     }
     public List<Delivery> listDeliveries() {
-        return deliveryRepository.findAll();
+        return deliveryRepository.findAllByOrderByIdDesc();
     }
     public List<DeliveryItem> listDeliveryItemsByDeliveryId(Long id) {
         return deliveryItemRepository.findAllByDeliveryId(id);
     }
     public List<Delivery> listDeliveriesByDeliveryDateBetween(Date startDate, Date endDate) {
-        return deliveryRepository.getAllByDeliveryDateBetween(startDate, endDate);
+        return deliveryRepository.findByDeliveryDateBetweenOrderByDeliveryDate(startDate, endDate);
     }
 
     public long count() {

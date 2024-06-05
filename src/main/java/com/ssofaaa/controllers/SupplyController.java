@@ -1,7 +1,6 @@
 package com.ssofaaa.controllers;
 
 import com.ssofaaa.entities.Delivery;
-import com.ssofaaa.entities.DeliveryItem;
 import com.ssofaaa.entities.Fruit;
 import com.ssofaaa.entities.Supplier;
 import com.ssofaaa.forms.DeliveryForm;
@@ -14,7 +13,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
@@ -35,6 +33,7 @@ public class SupplyController {
         model.addAttribute("suppliers", suppliers);
         List<Fruit> fruits = fruitService.listFruits();
         model.addAttribute("fruits", fruits);
+        model.addAttribute("supplyCount", deliveryService.count());
         model.addAttribute("deliveryForm", new DeliveryForm());
         return "index";
     }

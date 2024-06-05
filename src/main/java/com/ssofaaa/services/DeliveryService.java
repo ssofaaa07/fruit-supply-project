@@ -7,7 +7,6 @@ import com.ssofaaa.entities.Supplier;
 import com.ssofaaa.forms.DeliveryForm;
 import com.ssofaaa.repositories.DeliveryItemRepository;
 import com.ssofaaa.repositories.DeliveryRepository;
-import com.ssofaaa.repositories.FruitRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,7 +15,6 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor
@@ -81,5 +79,9 @@ public class DeliveryService {
     }
     public List<Delivery> listDeliveriesByDeliveryDateBetween(Date startDate, Date endDate) {
         return deliveryRepository.getAllByDeliveryDateBetween(startDate, endDate);
+    }
+
+    public long count() {
+        return deliveryRepository.count();
     }
 }

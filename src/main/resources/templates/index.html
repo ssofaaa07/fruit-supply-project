@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html xmlns:th="https://www.thymeleaf.org" xmlns:font-size="http://www.w3.org/1999/xhtml">
 <head>
-    <title th:text="${title}"/></title>
-    <link type="text/css" href="/static/style/main.css" th:href="@{/style/main.css}" rel="stylesheet" />
+    <title th:text="${title}"></title>
+    <link th:href="@{/styles/css/main.css}" rel="stylesheet" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<div class="title-box">
-    <p class="title-text" th:text="${title}"></p>
-</div>
 <div class="supply">
+    <div class="title-box">
+        <p class="title-text" th:text="'Принять поставку'"></p>
+    </div>
     <div class="form-input-box">
         <form class="form-input" th:method="POST" th:action="@{/take}" th:object="${deliveryForm}">
-            <label for="supplier">Поставщик:</label>
+            <label class="form-input-text" for="supplier">Поставщик:</label>
             <select id="supplier" name="supplier" th:field="*{supplier}">
                 <option th:each="supplier : ${suppliers}" th:value="${supplier.id}" th:text="${supplier.supplierName}"></option>
             </select>
             <br/>
-            <label for="deliveryDate">Дата поставки:</label>
+            <label class="form-input-text" for="deliveryDate">Дата поставки:</label>
             <input type="date" id="deliveryDate" name="deliveryDate" th:field="*{deliveryDate}" required>
-            <br/>
-            <h2>Продукты:</h2>
+            <p class="form-input-text">На данный момент в БД прописаны цены на Июнь (в остальные месяцы провести поставку не получится)</p>
+            <div class="form-input-text">Выбрать фрукты и их вес:</div>
             <div th:each="fruit : ${fruits}">
-                <label th:text="${fruit.fruitName}"></label>
+                <label class="form-input-text" th:text="${fruit.fruitType} + ' ' + ${fruit.fruitName} + ':'"></label>
                 <input type="number" th:field="*{countOfFruits[__${fruit.id}__]}" min="0"/>
+                <label class="form-input-text" th:text="'кг'"></label>
             </div>
-            </br>
             <div class="btn-group">
                 <input class="btn" type="reset" value="Очистить введённое">
                 <button class="btn">Принять поставку</button>
@@ -33,26 +33,30 @@
 
         </form>
     </div>
-
+    <div class="title-box">
+        <p class="title-text" th:text="'Сформировать отчет'"></p>
+    </div>
     <div class="form-input-box">
         <form class="form-input" th:method="GET" th:action="@{/downloadReport}">
-            <h2>Период:</h2>
-            <label for="start">С:</label>
+            <div class="form-input-text">Выбрать период:</div>
+            <label class="form-input-text" for="start">С:</label>
             <input type="date" id="start" name="start" required>
             <br/>
-            <label for="end">По:</label>
+            <label class="form-input-text" for="end">По:</label>
             <input type="date" id="end" name="end" required>
             <br/>
+            <div class="form-input-text">По кнопке "Скачать отчет" сформируется excel-документ и произойдет загрузка на компьютер.</div>
             <div class="btn-group">
                 <input class="btn" type="reset" value="Очистить введённое">
                 <button class="btn">Скачать отчет</button>
             </div>
-
         </form>
     </div>
 
+    <div class="title-box">
+        <p class="title-text" th:text="'Поставки. Всего ' + ${supplyCount}"></p>
+    </div>
     <div th:switch="${deliveries}">
-        <h2 th:case="null">В базе данных нет записей</h2>
         <div th:case="*">
             <table class="table">
                 <thead>
@@ -61,7 +65,6 @@
                     <th>Дата приемки</th>
                     <th>Поставщик</th>
                     <th>Сумма</th>
-                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -70,12 +73,6 @@
                     <td th:text="${delivery.deliveryDate}"></td>
                     <td th:text="${delivery.supplier.getSupplierName()}"></td>
                     <td th:text="${delivery.sumPrice}"></td>
-<!--                    <td><div class="btn-group">-->
-<!--                        <form th:action="@{/{id}(id=${delivery.getId()})}">-->
-<!--                            <button class="btn">Подробнее</button>-->
-<!--                        </form>-->
-<!--                    </div>-->
-<!--                    </td>-->
                 </tr>
                 </tbody>
             </table>

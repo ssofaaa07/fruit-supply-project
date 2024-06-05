@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.net.URI;
 import java.sql.Date;
 
 @RestController
@@ -30,7 +29,7 @@ public class ReportController {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         workbook.write(outputStream);
         HttpHeaders headers = new HttpHeaders();
-        headers.add("Content-Disposition", "attachment; filename=delivery_report.xlsx");
+        headers.add("Content-Disposition", "attachment; filename=delivery_report_" + start + "_" + end + ".xlsx");
         headers.add("Location", "/");
 
         return ResponseEntity

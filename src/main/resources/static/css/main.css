@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700;900&display=swap');
+
+.supply {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-input-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-input {
+    height: fit-content;
+    margin: auto;
+    width: 500px;
+    padding: 10px 10px;
+    vertical-align: middle;
+    border: 1px solid #c0c0c0;
+    border-radius: 20px;
+}
+
+.form-input-text {
+    margin: 5px 5px;
+    height: fit-content;
+    width: 90%;
+    font-family: 'Inter';
+    font-weight: 300px;
+    font-size: 16px;
+    text-align: left;
+    padding: 5px 5px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn {
+    font-family: 'Inter';
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #CCCCFF;
+    border: 1px solid #CCCCFF;
+    border-radius: 30px;
+    color: black;
+    cursor: pointer;
+    float: left;
+    margin: 5px 5px;
+    width: fit-content;
+}
+
+.btn:not(:last-child) {
+    border-right: none;
+}
+
+.btn:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn:hover {
+    background-color: #9999FF;
+}
+
+.table {
+	margin-bottom: 20px;
+    border: 1px solid #c0c0c0;
+    height: fit-content;
+    margin: auto;
+    width: 60%;
+    padding: 10px 10px;
+    vertical-align: middle;
+    border: 1px solid #c0c0c0;
+    border-radius: 30px;
+}
+
+.table th {
+    font-family: 'Inter';
+    font-size: 16px;
+	font-weight: bold;
+	padding: 5px 5px;
+	background: #DEDEDE;
+}
+.table td {
+    font-family: 'Inter';
+    font-size: 16px;
+	padding: 5px 5px;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-text {
+    margin: 10px 10px;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+input, select {
+    font-family: 'Inter';
+    background-color: #fff;
+    border: 1px solid #CCCCFF;
+    border-radius: 10px;
+    color: #474e57;
+    font-size: 14px;
+    padding: 5px;
+    width: 200px;
+    margin: 5px 5px;
+}
